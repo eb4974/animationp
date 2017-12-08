@@ -1,0 +1,83 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style id="stndz-style"></style>
+    <meta name="robots" content="demo">
+    <meta name="description" content="noindex">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>longscroll</title>
+      <style id="jsbin-css">
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans|Shadows+Into+Light" rel="stylesheet">
+      #canvas{
+        border:2px solid red;
+        width: 400px;
+        height: 10000px;
+        margin:0 auto;
+        position:relative;
+      }
+      #counter{
+        border: 2px solid blue;
+        background-color:blue;
+        color:white;
+        width:200 px;
+        height:30px;
+        top:123px
+        left:90px;
+        position:absolute;
+        z-index:-1;
+        opacity:0.9;
+      }
+      h1{ border:2px solid blue;
+      background-color:yellow;
+      position:absolute;
+      top:120px
+      left:50px;
+    }
+    </style>
+    </head>
+    <body>
+
+      <div id="canvas">
+
+        <div id="counter" style="top: 2295.86px; background-color: blue;">1954.5px</div>
+        <h1>Hello</h1>
+
+      <img src="https://2.bp.blogspot.com/-MTmoGMeE2cc/WSGIutFSHoI/AAAAAAAAK6o/Ya-tX6NvAqUM2LqV4VlxzsfwzD8xXEPFACLcB/s1600/254___thumbs-up-emoji.png" alt="" id="icon" style="top: 10070px;">
+      </div>
+      <script id="jsbin-javascript">
+
+    var canvas = document.getElementById("canvas");
+    var counter = document.getElementById("counter");
+    var icon = document.getElementById("icon");
+
+    window.onscroll = function(){
+
+      var y = window.pageYOffset;
+
+      console.log(y);
+
+      counter.style.top = 400 + y * .97 + "px";
+      counter.innerHTML = y + "px";
+
+      if (y > 2000) {
+        counter.style.backgroundColor = "green";
+      }else{
+        counter.style.backgroundColor = "blue";}
+
+        icon.style.top = 200 + y  + "px";
+
+      if(y > 2000){
+
+          icon.src="https://2.bp.blogspot.com/-MTmoGMeE2cc/WSGIutFSHoI/AAAAAAAAK6o/Ya-tX6NvAqUM2LqV4VlxzsfwzD8xXEPFACLcB/s1600/254___thumbs-up-emoji.png";
+
+      }else{
+
+      icon.src="https://1.bp.blogspot.com/-jnt2C7f2HH8/WSGIun5uhGI/AAAAAAAAK6s/A1R4fUrtMUsQtEbKqopa2xTWqaEtxClogCLcB/s1600/256___come-to-fight-emoji.png";
+     }
+    };
+
+  </script>
+  </body>
+</html>

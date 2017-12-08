@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body id="animation3">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+
+        <!-- start main navigation -->
+<nav class="mainnavigation cell small-12">
+        <ul class="dropdown menu" data-dropdown-menu>
+  <li><a href="index.html">Go Back</a></li>
+  <li><a href="animation1.html">Animation 1</a></li>
+  <li><a href="animation2.html">Animation 2</a></li>
+  <li><a href="animation3.html">Animation 3</a></li>
+  <li><a href="sprite.html">Sprite</a></li>
+  <li><a href="translatetransform.html">Translate/Transform</a></li>
+</ul>
+</nav>
+        <!-- end main navigation -->
+</head>
+</div>
+
+<div id="square">
+</div>
+<style>
+@keyframes anime
+{
+	0%
+	{
+		background-color:#7B68EE;
+	}
+	25%
+	{
+		background-color:#4169E1;
+	}
+	50%
+	{
+		background-color:#0000FF;
+	}
+	75%
+	{
+		background-color:#0000CD;
+	}
+  50%
+  {
+    background-color:#00008B;
+  }
+  25%
+  {
+    background-color:#000080;
+  }
+  0%
+  {
+    background-color:#191970;
+  }
+}
+body
+{
+	position:relative;
+}
+#square
+{
+	position:center;
+	height:100px;
+	width:100px;
+	background-color:#6495ED;
+	border-radius:50%;
+	position:relative;
+      animation:anime 3s;
+}
+</style>
+</body>
+</html>

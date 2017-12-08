@@ -1,0 +1,129 @@
+
+  /* selector {property:value;} */
+nav {border: 5px dotted pink;}
+
+  #indexpage .mainnavigation li:nth-child(1){background-color: {background-color: #300E97;}
+  #animation1 .mainnavigation li:nth-child(2){background-color: pink;}
+  #animation2 .mainnavigation li:nth-child(3){background-color: pink;}
+  #animation3 .mainnavigation li:nth-child(4){background-color: pink;}
+  #sprite .mainnavigation li:nth-child(5){background-color: pink;}
+  #translatetransform .mainnavigation li:nth-child(6){background-color: pink;}
+
+.class { background-color: #FFFFFF; }
+  .fa {
+      padding: 10px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+  }
+
+body {
+    background-color: #FFFFFF;
+    padding: 20px;
+    font-family: fantasy;
+}
+
+body {
+  background: #FFFFFF;
+}
+
+<style type="text/css">
+
+.pushme {
+    float: left;
+    margin: 4em 1em;
+    width: 100px;
+    height: 60px;
+    border: 2px solid green;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+
+
+.sunmoon {
+  width: 90px;
+  margin: 2% auto;
+  animation: play .8s steps(10) infinite;
+}
+
+@keyframes play {
+    100% { background-position: -1900px; }
+}
+.loveee {
+  width: 90px;
+  margin: 2% auto;
+  animation: play .8s steps(10) infinite;
+}
+
+@keyframes play {
+    100% { background-position: -1900px; }
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+  text-align: center;
+    font-size: 70px;
+    word-break: break-all;
+    font-family:'Shadows Into Light', cursive;
+    color:ORCHID;
+}
+h2 {
+    font-size: 50px;
+    word-break: break-all;
+    font-family: 'Dancing Script', cursive;
+}
+p {
+    font-size: 50px;
+    word-break: break-all;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.content {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
